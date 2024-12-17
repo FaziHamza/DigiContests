@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap 5-->
+
+    <!-- aos animation -->
+    <script src="assets/css/aos.js"></script>
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <!-- aos animation -->
+
+    <!-- css -->
+    <link href="assets/css/hover.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <!-- css -->
+
+    <link href="images/fav.png" rel="icon" type="image/x-icon">
+    <title>Dashboard</title>
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <div class="dashboard-sidebar">
+            <div class="sidenav">
+                <div class="user-profile">
+                    <div class="profile">
+                        <img src="assets/images/profile.png" alt="">
+                    </div>
+                    <h4>Hi, DigiContests</h4>
+                    <p>
+                        Manage your contests and participants efficiently.
+                    </p>
+                </div>
+                <div class="sidenav-menu">
+                    <div class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 17.5V14.5M11.5 17.5V8.5M16.5 17.5V13.5" stroke="#828999"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path
+                                    d="M21.5 5.5C21.5 7.15685 20.1569 8.5 18.5 8.5C16.8431 8.5 15.5 7.15685 15.5 5.5C15.5 3.84315 16.8431 2.5 18.5 2.5C20.1569 2.5 21.5 3.84315 21.5 5.5Z"
+                                    stroke="#828999" stroke-width="1.5" />
+                                <path
+                                    d="M21.4955 11C21.4955 11 21.5 11.3395 21.5 12C21.5 16.4784 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4784 2.5 12C2.5 7.52169 2.5 5.28252 3.89124 3.89127C5.28249 2.50003 7.52166 2.50003 12 2.50003L13 2.5"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>
+                                Dashboard
+                            </span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.51819 10.3058C3.13013 9.23176 2.9361 8.69476 3.01884 8.35065C3.10933 7.97427 3.377 7.68084 3.71913 7.58296C4.03193 7.49346 4.51853 7.70973 5.49173 8.14227C6.35253 8.52486 6.78293 8.71615 7.18732 8.70551C7.63257 8.69379 8.06088 8.51524 8.4016 8.19931C8.71105 7.91237 8.91861 7.45513 9.33373 6.54064L10.2486 4.52525C11.0128 2.84175 11.3949 2 12 2C12.6051 2 12.9872 2.84175 13.7514 4.52525L14.6663 6.54064C15.0814 7.45513 15.289 7.91237 15.5984 8.19931C15.9391 8.51524 16.3674 8.69379 16.8127 8.70551C17.2171 8.71615 17.6475 8.52486 18.5083 8.14227C19.4815 7.70973 19.9681 7.49346 20.2809 7.58296C20.623 7.68084 20.8907 7.97427 20.9812 8.35065C21.0639 8.69476 20.8699 9.23176 20.4818 10.3057L18.8138 14.9222C18.1002 16.897 17.7435 17.8844 16.9968 18.4422C16.2502 19 15.2854 19 13.3558 19H10.6442C8.71459 19 7.74977 19 7.00315 18.4422C6.25654 17.8844 5.89977 16.897 5.18622 14.9222L3.51819 10.3058Z"
+                                    stroke="#828999" stroke-width="1.5" />
+                                <path d="M12 14H12.009" stroke="#828999" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7 22H17" stroke="#828999" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+
+                            <span>
+                                Subscription
+                            </span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.1075 5.57624C11.3692 6.02707 11.5 6.25248 11.5 6.5C11.5 6.74752 11.3692 6.97293 11.1075 7.42376L9.85804 9.57624C9.59636 10.0271 9.46551 10.2525 9.25 10.3762C9.03449 10.5 8.7728 10.5 8.24943 10.5H5.75057C5.2272 10.5 4.96551 10.5 4.75 10.3762C4.53449 10.2525 4.40364 10.0271 4.14196 9.57624L2.89253 7.42376C2.63084 6.97293 2.5 6.74752 2.5 6.5C2.5 6.25248 2.63084 6.02707 2.89253 5.57624L4.14196 3.42376C4.40364 2.97293 4.53449 2.74752 4.75 2.62376C4.96551 2.5 5.2272 2.5 5.75057 2.5H8.24943C8.7728 2.5 9.03449 2.5 9.25 2.62376C9.46551 2.74752 9.59636 2.97293 9.85804 3.42376L11.1075 5.57624Z"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M21.1075 11.5762C21.3692 12.0271 21.5 12.2525 21.5 12.5C21.5 12.7475 21.3692 12.9729 21.1075 13.4238L19.858 15.5762C19.5964 16.0271 19.4655 16.2525 19.25 16.3762C19.0345 16.5 18.7728 16.5 18.2494 16.5H15.7506C15.2272 16.5 14.9655 16.5 14.75 16.3762C14.5345 16.2525 14.4036 16.0271 14.142 15.5762L12.8925 13.4238C12.6308 12.9729 12.5 12.7475 12.5 12.5C12.5 12.2525 12.6308 12.0271 12.8925 11.5762L14.142 9.42376C14.4036 8.97293 14.5345 8.74752 14.75 8.62376C14.9655 8.5 15.2272 8.5 15.7506 8.5H18.2494C18.7728 8.5 19.0345 8.5 19.25 8.62376C19.4655 8.74752 19.5964 8.97293 19.858 9.42376L21.1075 11.5762Z"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M11.1075 16.5762C11.3692 17.0271 11.5 17.2525 11.5 17.5C11.5 17.7475 11.3692 17.9729 11.1075 18.4238L9.85804 20.5762C9.59636 21.0271 9.46551 21.2525 9.25 21.3762C9.03449 21.5 8.7728 21.5 8.24943 21.5H5.75057C5.2272 21.5 4.96551 21.5 4.75 21.3762C4.53449 21.2525 4.40364 21.0271 4.14196 20.5762L2.89253 18.4238C2.63084 17.9729 2.5 17.7475 2.5 17.5C2.5 17.2525 2.63084 17.0271 2.89253 16.5762L4.14196 14.4238C4.40364 13.9729 4.53449 13.7475 4.75 13.6238C4.96551 13.5 5.2272 13.5 5.75057 13.5H8.24943C8.7728 13.5 9.03449 13.5 9.25 13.6238C9.46551 13.7475 9.59636 13.9729 9.85804 14.4238L11.1075 16.5762Z"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <span>
+                                Contests
+                            </span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 18V16M12 18V15M17 18V13M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M5.99219 11.4853C8.14729 11.5571 13.0341 11.2318 15.8137 6.82035M13.9923 6.28738L15.8678 5.98552C16.0964 5.95641 16.432 6.13688 16.5145 6.35201L17.0104 7.99045"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <span>
+                                Analysis
+                            </span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+                                    stroke="#828999" stroke-width="1.5" />
+                            </svg>
+
+                            <span>
+                                Profile
+                            </span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" class="nav-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52992 14.7696C2.31727 16.1636 3.268 17.1312 4.43205 17.6134C8.89481 19.4622 15.1052 19.4622 19.5679 17.6134C20.732 17.1312 21.6827 16.1636 21.4701 14.7696C21.3394 13.9129 20.6932 13.1995 20.2144 12.5029C19.5873 11.5793 19.525 10.5718 19.5249 9.5C19.5249 5.35786 16.1559 2 12 2C7.84413 2 4.47513 5.35786 4.47513 9.5C4.47503 10.5718 4.41272 11.5793 3.78561 12.5029C3.30684 13.1995 2.66061 13.9129 2.52992 14.7696Z"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 19C8.45849 20.7252 10.0755 22 12 22C13.9245 22 15.5415 20.7252 16 19"
+                                    stroke="#828999" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <span>
+                                Updates
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sidenav-menu">
+                <div class="nav-item">
+                    <a href="" class="nav-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 17.625C14.9264 19.4769 13.3831 21.0494 11.3156 20.9988C10.8346 20.987 10.2401 20.8194 9.05112 20.484C6.18961 19.6768 3.70555 18.3203 3.10956 15.2815C3 14.723 3 14.0944 3 12.8373V11.1627C3 9.90561 3 9.27705 3.10956 8.71846C3.70555 5.67965 6.18961 4.32316 9.05112 3.51603C10.2401 3.18064 10.8346 3.01295 11.3156 3.00119C13.3831 2.95061 14.9264 4.52307 15 6.37501"
+                                stroke="#828999" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M21 12H10M21 12C21 11.2998 19.0057 9.99153 18.5 9.5M21 12C21 12.7002 19.0057 14.0085 18.5 14.5"
+                                stroke="#828999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>
+                            Logout
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-body">
+            <div class="dashboard-topbar">
+                <div class="user-card">
+                    <div class="user">
+                        <img src="assets/images/user.png" alt="">
+                    </div>
+                    <h4>
+                        Luqta
+                    </h4>
+                    <small>Client</small>
+                </div>
+            </div>
+            <div class="dashboard-content">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="progress-card">
+                                    <div class="heading">
+                                        <div>
+                                            <h4>
+                                                Progress
+                                            </h4>
+                                            <p>
+                                                6.1h
+                                                <span>
+                                                    Play time this week
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/arrow-up.png" class="arrow-up" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="graph">
+                                        <img src="assets/images/graph.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="level-card">
+                                    <div class="head">
+                                        <div class="heading">
+                                            <div class="users">
+                                                <div class="profiles">
+                                                    <img src="assets/images/l1.png" class="logo" alt="">
+                                                    <img src="assets/images/l2.png" class="logo" alt="">
+                                                    <img src="assets/images/l3.png" class="logo" alt="">
+                                                </div>
+                                                <span class="name">Trivia Quest</span>
+                                            </div>
+                                            <div class="timeline">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.3136 5.77896L13.8553 5.68511C12.7502 2.76827 9.57732 1.10694 6.48381 1.93293C3.18897 2.81269 1.23191 6.18096 2.11257 9.45614C2.99325 12.7314 6.37816 14.6732 9.67301 13.7935C12.1194 13.1403 13.8282 11.1152 14.1857 8.77493"
+                                                        stroke="#2E3B55" stroke-width="0.921303" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M8.04422 5.40573V7.86253L9.27262 9.09093" stroke="#2E3B55"
+                                                        stroke-width="0.921303" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>
+                                                    <b>Timeline:</b> 01:03:56
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            A digital trivia game where participants answer questions on various topics
+                                            to accumulate points.
+                                        </p>
+                                        <div class="levels">
+                                            <h6>
+                                                Levels:
+                                            </h6>
+                                            <span class="badge bg-secondary">Level 1</span>
+                                            <span class="badge bg-secondary">Level 2</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <button class="btn-win">
+                                            <h6>
+                                                <svg width="54" height="20" viewBox="0 0 54 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.1386 3.94413C9.4553 2.96941 10.8343 2.96941 11.151 3.94413L12.045 6.69572C12.1867 7.13163 12.5929 7.42676 13.0512 7.42676H15.9444C16.9693 7.42676 17.3954 8.73823 16.5663 9.34064L14.2256 11.0412C13.8548 11.3106 13.6997 11.7882 13.8413 12.2241L14.7353 14.9757C15.052 15.9504 13.9364 16.7609 13.1073 16.1585L10.7666 14.4579C10.3958 14.1885 9.89373 14.1885 9.52293 14.4579L7.18229 16.1585C6.35314 16.7609 5.23753 15.9504 5.55424 14.9756L6.44828 12.2241C6.58992 11.7882 6.43476 11.3106 6.06395 11.0412L3.72331 9.34064C2.89417 8.73823 3.32029 7.42676 4.34518 7.42676H7.23836C7.6967 7.42676 8.10292 7.13162 8.24455 6.69572L9.1386 3.94413Z"
+                                                        fill="#F1E7D1" />
+                                                    <path
+                                                        d="M26.0661 3.94413C26.3828 2.96941 27.7618 2.96941 28.0785 3.94413L28.9726 6.69572C29.1142 7.13163 29.5204 7.42676 29.9787 7.42676H32.8719C33.8968 7.42676 34.3229 8.73823 33.4938 9.34064L31.1532 11.0412C30.7823 11.3106 30.6272 11.7882 30.7688 12.2241L31.6629 14.9757C31.9796 15.9504 30.864 16.7609 30.0348 16.1585L27.6942 14.4579C27.3234 14.1885 26.8213 14.1885 26.4505 14.4579L24.1098 16.1585C23.2807 16.7609 22.1651 15.9504 22.4818 14.9756L23.3758 12.2241C23.5175 11.7882 23.3623 11.3106 22.9915 11.0412L20.6508 9.34064C19.8217 8.73823 20.2478 7.42676 21.2727 7.42676H24.1659C24.6242 7.42676 25.0305 7.13162 25.1721 6.69572L26.0661 3.94413Z"
+                                                        fill="#E3D0A2" />
+                                                    <path
+                                                        d="M42.9937 3.94413C43.3104 2.96941 44.6893 2.96941 45.006 3.94413L45.9001 6.69572C46.0417 7.13163 46.4479 7.42676 46.9063 7.42676H49.7995C50.8244 7.42676 51.2505 8.73823 50.4213 9.34064L48.0807 11.0412C47.7099 11.3106 47.5547 11.7882 47.6964 12.2241L48.5904 14.9757C48.9071 15.9504 47.7915 16.7609 46.9624 16.1585L44.6217 14.4579C44.2509 14.1885 43.7488 14.1885 43.378 14.4579L41.0374 16.1585C40.2082 16.7609 39.0926 15.9504 39.4093 14.9756L40.3034 12.2241C40.445 11.7882 40.2898 11.3106 39.919 11.0412L37.5784 9.34064C36.7492 8.73823 37.1754 7.42676 38.2002 7.42676H41.0934C41.5518 7.42676 41.958 7.13162 42.0996 6.69572L42.9937 3.94413Z"
+                                                        fill="#E3D0A2" />
+                                                </svg>
+                                                <span>
+                                                    Win an IPHONE 15
+                                                </span>
+                                                <svg width="54" height="20" viewBox="0 0 54 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.15309 3.94413C9.4698 2.96941 10.8488 2.96941 11.1655 3.94413L12.0595 6.69572C12.2012 7.13163 12.6074 7.42676 13.0657 7.42676H15.9589C16.9838 7.42676 17.4099 8.73823 16.5808 9.34064L14.2401 11.0412C13.8693 11.3106 13.7141 11.7882 13.8558 12.2241L14.7498 14.9757C15.0665 15.9504 13.9509 16.7609 13.1218 16.1585L10.7811 14.4579C10.4103 14.1885 9.90823 14.1885 9.53742 14.4579L7.19678 16.1585C6.36764 16.7609 5.25203 15.9504 5.56873 14.9756L6.46278 12.2241C6.60441 11.7882 6.44925 11.3106 6.07845 11.0412L3.73781 9.34064C2.90866 8.73823 3.33479 7.42676 4.35967 7.42676H7.25286C7.7112 7.42676 8.11741 7.13162 8.25905 6.69572L9.15309 3.94413Z"
+                                                        fill="#E3D0A2" />
+                                                    <path
+                                                        d="M26.0805 3.94411C26.3972 2.96939 27.7762 2.9694 28.0929 3.94412L28.9869 6.6957C29.1286 7.13161 29.5348 7.42674 29.9931 7.42674H32.8863C33.9112 7.42674 34.3373 8.73822 33.5082 9.34063L31.1675 11.0412C30.7967 11.3106 30.6416 11.7881 30.7832 12.224L31.6772 14.9756C31.9939 15.9504 30.8783 16.7609 30.0492 16.1585L27.7086 14.4579C27.3377 14.1885 26.8356 14.1885 26.4648 14.4579L24.1242 16.1585C23.295 16.7609 22.1794 15.9504 22.4961 14.9756L23.3902 12.224C23.5318 11.7881 23.3767 11.3106 23.0059 11.0412L20.6652 9.34063C19.8361 8.73822 20.2622 7.42674 21.2871 7.42674H24.1803C24.6386 7.42674 25.0448 7.13161 25.1865 6.6957L26.0805 3.94411Z"
+                                                        fill="#E3D0A2" />
+                                                    <path
+                                                        d="M43.0082 3.94411C43.3249 2.96939 44.7039 2.9694 45.0206 3.94412L45.9146 6.6957C46.0563 7.13161 46.4625 7.42674 46.9208 7.42674H49.814C50.8389 7.42674 51.265 8.73822 50.4359 9.34063L48.0952 11.0412C47.7244 11.3106 47.5693 11.7881 47.7109 12.224L48.6049 14.9756C48.9216 15.9504 47.806 16.7609 46.9769 16.1585L44.6362 14.4579C44.2654 14.1885 43.7633 14.1885 43.3925 14.4579L41.0519 16.1585C40.2227 16.7609 39.1071 15.9504 39.4238 14.9756L40.3179 12.224C40.4595 11.7881 40.3044 11.3106 39.9335 11.0412L37.5929 9.34063C36.7638 8.73822 37.1899 7.42674 38.2148 7.42674H41.108C41.5663 7.42674 41.9725 7.13161 42.1141 6.6957L43.0082 3.94411Z"
+                                                        fill="#F1E7D1" />
+                                                </svg>
+                                            </h6>
+                                            <svg width="47" height="47" viewBox="0 0 47 47" class="arrow" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.246094" y="0.347656" width="46.5507" height="46.5507"
+                                                    rx="23.2754" fill="#F5F5F9" />
+                                                <path d="M26.4296 20.7122L19.6409 27.5009" stroke="#2E3B55"
+                                                    stroke-width="0.969807" stroke-linecap="round" />
+                                                <path
+                                                    d="M20.9349 19.864C20.9349 19.864 26.1381 19.4254 26.9278 20.215C27.7174 21.0046 27.2787 26.2079 27.2787 26.2079"
+                                                    stroke="#2E3B55" stroke-width="0.969807" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="plans-section">
+                                    <div class="plans-card">
+                                        <div class="price-card">
+                                            <div class="heading">
+                                                <h1>
+                                                    $19
+                                                    <small>
+                                                        /month
+                                                    </small>
+                                                </h1>
+                                                <span class="badge ">
+                                                    Current plan
+                                                </span>
+                                            </div>
+                                            <h3>Starter</h3>
+                                            <h6>
+                                                Unleash the power of automation.
+                                            </h6>
+                                            <div class="pkg-options">
+                                                <div class="option">
+                                                    <img src="assets/images/check.png" class="check" alt="">
+                                                    <span>
+                                                        Multi-step Zaps
+                                                    </span>
+                                                </div>
+                                                <div class="option">
+                                                    <img src="assets/images/check.png" class="check" alt="">
+                                                    <span>
+                                                        3 Premium Apps
+                                                    </span>
+                                                </div>
+                                                <div class="option">
+                                                    <img src="assets/images/check.png" class="check" alt="">
+                                                    <span>
+                                                        2 Users team
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                Upgrade Plan
+                                            </button>
+                                        </div>
+                                        <div class="price-card popular">
+                                            <div class="popular-tag">
+                                                <span class="badge ">
+                                                    Current plan
+                                                </span>
+                                            </div>
+                                            <div class="heading">
+                                                <h1>
+                                                    $89
+                                                    <small>
+                                                        /month
+                                                    </small>
+                                                </h1>
+                                            </div>
+                                            <h3>Company</h3>
+                                            <h6>
+                                                Automation plus enterprise-grade features.
+                                            </h6>
+                                            <div class="pkg-options">
+                                                <div class="option">
+                                                    <img src="assets/images/check2.png" class="check" alt="">
+                                                    <span>
+                                                        Multi-step Zap
+                                                    </span>
+                                                </div>
+                                                <div class="option">
+                                                    <img src="assets/images/check2.png" class="check" alt="">
+                                                    <span>
+                                                        Unlimited Premium Apps
+                                                    </span>
+                                                </div>
+                                                <div class="option">
+                                                    <img src="assets/images/check2.png" class="check" alt="">
+                                                    <span>
+                                                        Unlimited Users Team
+                                                    </span>
+                                                </div>
+                                                <div class="option">
+                                                    <img src="assets/images/check2.png" class="check" alt="">
+                                                    <span>
+                                                        Advanced Admin
+                                                    </span>
+                                                </div>
+                                                <div class="option">
+                                                    <img src="assets/images/check2.png" class="check" alt="">
+                                                    <span>
+                                                        Custom Data Retention
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-warning">
+                                                Choose plan
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contest-card">Contest</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <script src="assets/css/jquery.min.js"></script>
+    <script src="assets/css/owl.carousel.min.js"></script>
+    <script src="assets/css/script.js"></script>
+
+</body>
+
+</html>
